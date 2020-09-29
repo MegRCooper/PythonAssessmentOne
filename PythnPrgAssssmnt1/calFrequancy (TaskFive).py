@@ -1,13 +1,13 @@
-def calFrequency (): #Step One
-    usersStr = input("Please enter your string: ").lower() #Step Two
+def calFrequency (): 
+    usersStr = input("Please enter your string: ").lower() 
     usersStr = usersStr.replace(" ", "") # Removal of the spaces
     freq = {} # Dictionary to save chars to.
-    for char in usersStr: #Step 3
+    for char in usersStr: 
         if char in freq: 
             freq[char] += 1
         else: 
             freq[char] = 1
-    for i in (freq):
-        freqSorted = (sorted(freq.items(), key = lambda item: item [1])) # Step Four
-    print(freqSorted [:: -1]) # Step 5, String slicing to iterate backwards
+    for i in (freq)
+        freqSorted = (sorted(freq.items(), key = lambda item: item [1])) 
+    print(freqSorted [:: -1]) 
 calFrequency()
